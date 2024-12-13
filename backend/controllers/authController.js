@@ -54,7 +54,7 @@ export const signup = async (req, res) => {
       },
     });
   } catch (error) {
-    res.status(400).json({ success: false, message: error.message });
+    res.status(400).json({ success: false, message: "User Created But Not Verified, Bcoz MailTrap accounts only Accepted."});
   }
 
   //   res.send("signup route");
